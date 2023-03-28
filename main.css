@@ -1,0 +1,21 @@
+header {
+	background-color: black; 
+	height: 150px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	background-color: white;
+	height: 50px;
+}
+
+section {
+	background-color: grey;
+}
+
+footer {
+	background-color: aquamarine;
+	height: 200px;
+}
