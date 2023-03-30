@@ -30,7 +30,7 @@ position:absolute;
 z-index:2;
 }
 
-div.d-flex {
+div.search-box {
 	justify-items: flex-end;
 	padding-top: 10px;
 }
@@ -43,6 +43,7 @@ left:-600px;/*메뉴의 처음위치는 브라우저 밖으로 지정*/
 top:15px;
 position:absolute;
 z-index:1;
+font-family: fantasy;
 }
 
 ul li {
