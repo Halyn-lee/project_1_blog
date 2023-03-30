@@ -1,0 +1,98 @@
+header {
+	background-color: black; 
+	height: 150px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	background-color: white;
+	height: 50px;
+	display: flex;
+}
+
+div#content {
+width:1000px;
+height:50px;
+left:0px;
+top:0px;
+position:relative;
+}
+
+div#home {
+width:50px;
+height:50px;
+background:white;
+left:0px;
+top:0px;
+position:absolute;
+z-index:2;
+}
+
+div.search-box {
+	justify-items: flex-end;
+	padding-top: 10px;
+}
+
+ul {
+width:600px;
+height:50px;
+list-style:none;
+left:-600px;/*메뉴의 처음위치는 브라우저 밖으로 지정*/
+top:15px;
+position:absolute;
+z-index:1;
+font-family: fantasy;
+}
+
+ul li {
+width:150px;
+height:50px;
+float:left;/*가로로 늘어선 형태를 만들기 위해서*/
+opacity:0.4;
+text-decoration: none;
+color: black;
+}
+
+li > a {
+	text-decoration: none;
+	color: black;
+}
+
+section {
+	background-color: white;
+}
+
+footer {
+	background-color: black;
+	height: 200px;
+}
+article {
+	padding: 50px;
+	background-color: rgb(233, 233, 233)
+}
+/* .container {
+	
+} */
+
+.cards-wrapper{
+	display: flex;
+}
+
+.card {
+	margin: 0px;
+}
+
+
+.footer-comment {
+	background-color: rgb(34, 34, 34);
+	color: rgb(205, 209, 213);
+	text-align: center;
+	height: 40px;
+	padding: 0 auto;
+}
+
+/* .footer-icon {
+	
+} */
