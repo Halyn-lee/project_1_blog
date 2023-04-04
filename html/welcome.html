@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Welcome</title>
+	<link rel="stylesheet" href="../css/welcome.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 </head>
+
 <body>
-	<a href="music_posts.html">웰컴 페이지. 이미지랑 효과 추가할것!! 누르면 메인페이지로 가용</a>
+	<div class="bg">
+		<!-- <scrip>
+			setTimeout('move_page()', 17000); //17초후에 move_page함수실행
+		
+			function move_page(){
+			location.href="../html/music_posts.html"  // 페이지 이동
+			}
+			
+		
+		</scrip> -->
+
+		<script language="JavaScript">
+			function Timer() {
+				setTimeout("locateKap()", 17000);
+			}
+			function locateKap() {
+				location.replace("../html/music_posts.html");
+			}
+		</script>
+
+		<script language="JavaScript">
+			cnt = 17; // 카운트다운 시간 초단위로 표시
+			function countdown() {
+				if (cnt == 0) {
+					// 시간이 0일경우
+					locateKap();
+				} else {
+					// 시간이 남았을 경우 카운트다운을 지속한다.
+					document.all.cntDiv.innerHTML = cnt + "초 뒤에 저의 공간으로 이동할게요.";
+					setTimeout("countdown()", 1000);
+					cnt--;
+				}
+			}
+		</script>
+
+		<video muted autoplay loop>
+			<source src="../videos/welcome.mp4" type="video/mp4">
+		</video>
+		<div class="wrapper">
+			<h3>안녕하세요!</h3>
+			<h5>저의 홈페이지에 오신 것을 환영합니다.</h5>
+			<h6>좋아하는 노래들을 가볍게 포스팅하고,</h6>
+			<h6>가끔 일기를 올려요.</h6>
+			<h6>방명록은 편하게 열려있답니다.</h6>
+			<div id="cntDiv" style="font-size: 25px;"></div>
+			<script>countdown();</script>
+			<script>onclick();</script>
+		</div>
+	</div>
+	<div class="welcome-section content-hidden">
+		<div class="content-wrap">
+			<ul class="fly-in-text">
+				<li>W</li>
+				<li>E</li>
+				<li>L</li>
+				<li>C</li>
+				<li>O</li>
+				<li>M</li>
+				<li>E</li>
+				<li>!</li>
+			</ul>
+			<a href="../html/music_posts.html" class="enter-button">Click ME</a>
+		</div>
+	</div>
+
+	<script>
+
+		$(function () {
+			var welcomSection = $('.welcome-section'),
+				enterButton = welcomSection.find('.enter-button');
+
+			setTimeout(function () {
+				welcomSection.removeClass('content-hidden');
+			}, 800);
+
+			enterButton.on('click', function (e) {
+				e.preventDefault();
+				welcomSection.addClass('content-hidden').fadeOut();
+			})
+		})
+
+	</script>
+
+
 </body>
+
 </html>
