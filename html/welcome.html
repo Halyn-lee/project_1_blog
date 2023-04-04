@@ -12,31 +12,21 @@
 
 <body>
 	<div class="bg">
-		<!-- <scrip>
-			setTimeout('move_page()', 17000); //17초후에 move_page함수실행
-		
-			function move_page(){
-			location.href="../html/music_posts.html"  // 페이지 이동
-			}
-			
-		
-		</scrip> -->
-
 		<script language="JavaScript">
 			function Timer() {
-				setTimeout("locateKap()", 17000);
+				setTimeout("locateMain()", 20000);
 			}
-			function locateKap() {
+			function locateMain() {
 				location.replace("../html/music_posts.html");
 			}
 		</script>
 
 		<script language="JavaScript">
-			cnt = 17; // 카운트다운 시간 초단위로 표시
+			cnt = 20; // 카운트다운 시간 초단위로 표시
 			function countdown() {
 				if (cnt == 0) {
 					// 시간이 0일경우
-					locateKap();
+					locateMain();
 				} else {
 					// 시간이 남았을 경우 카운트다운을 지속한다.
 					document.all.cntDiv.innerHTML = cnt + "초 뒤에 저의 공간으로 이동할게요.";
@@ -57,6 +47,7 @@
 			<h6>방명록은 편하게 열려있답니다.</h6>
 			<div id="cntDiv" style="font-size: 25px;"></div>
 			<script>countdown();</script>
+			<a class="quickMove" href="../html/music_posts.html">빠른 이동을 원하시면, 클릭해주세요.</a>
 		</div>
 	</div>
 	<div class="welcome-section content-hidden">
