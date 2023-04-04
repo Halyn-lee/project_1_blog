@@ -1,3 +1,5 @@
+
+
 header {
 	background-color: black; 
 	height: 150px;
@@ -66,8 +68,21 @@ li > a {
 	color: black;
 }
 
-section {
-	background-color: white;
+	section {
+		animation: fadein 2000ms ease-out;
+		-webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+		background-color: white;
+	}
+
+	
+@keyframes fadein {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+@-webkit-keyframes fadein {
+	from {opacity:0;}
+	to {opacity:1;}
 }
 
 
