@@ -54,7 +54,7 @@ left:-600px;/*메뉴의 처음위치는 브라우저 밖으로 지정*/
 top:15px;
 position:absolute;
 z-index:1;
-font-family: fantasy;
+font-family: 'Kanit', sans-serif;
 }
 
 ul li {
@@ -77,13 +77,23 @@ section {
 	background-color: white;
 	font-family: 'BookkMyungjo-Bd';
 }
-
-@keyframes fadein {
+	
+@keyframes fadeIn {
 	from {opacity:0;}
 	to {opacity:1;}
 }
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadeIn {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+@keyframes fadeOut {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+@-webkit-keyframes fadeOut {
 	from {opacity:0;}
 	to {opacity:1;}
 }
@@ -153,7 +163,7 @@ a {
 
 .bt_wrap {
 	margin-top: 30px;
-	text-align: center;
+	text-align: right;
 	font-size: 0;
 }
 
@@ -164,9 +174,10 @@ a {
 	padding: 5px;
 	border: 1px solid #000;
 	border-radius: 5px;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	text-decoration: none;
 	color: #000;
+	text-align: center;
 }
 
 .bt_wrap a:first-child {

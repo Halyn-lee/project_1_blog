@@ -59,7 +59,7 @@ left:-600px;/*메뉴의 처음위치는 브라우저 밖으로 지정*/
 top:15px;
 position:absolute;
 z-index:1;
-font-family: fantasy;
+font-family: 'Kanit', sans-serif;
 color: black;
 }
 
@@ -84,15 +84,26 @@ li > a {
 	}
 
 	
-@keyframes fadein {
+@keyframes fadeIn {
 	from {opacity:0;}
 	to {opacity:1;}
 }
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadeIn {
 	from {opacity:0;}
 	to {opacity:1;}
 }
+
+@keyframes fadeOut {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+@-webkit-keyframes fadeOut {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
 
 
 footer {
@@ -100,14 +111,13 @@ footer {
 	height: 200px;
 }
 article {
-	padding: 50px;
+	padding: 10% 10%;
 	background-color: rgb(233, 233, 233)
 }
 
-
-/* .container {
-	
-} */
+.container{
+	font-family: 'BookkMyungjo-Bd';
+}
 
 .cards-wrapper{
 	display: flex;
@@ -115,6 +125,10 @@ article {
 
 .card {
 	margin: 0px;
+}
+
+.card-text{
+	font-size: 15px;
 }
 
 
