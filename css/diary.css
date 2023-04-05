@@ -133,9 +133,28 @@ a {
 	color: inherit;
 }
 
+.top > .top_num, .top_count {
+	font-family: 'kanit';
+	width: 20%;
+	text-align: center;
+}
+
+.top > .top_title {
+	font-family: 'kanit';
+	width: 50%;
+	text-align: center;
+}
+
+.top > .top_date {
+	font-family: 'kanit';
+	width: 10%;
+	text-align: center;
+}
+
 .num, .date, .count{
 	font-family: Calibri;
 }
+
 
 .board_wrap {
 	width: 700px;
