@@ -149,8 +149,8 @@ a {
 }
 
 .bt_wrap {
-	margin-top: 30px;
-	text-align: center;
+	margin-top: 10px;
+	text-align: right;
 	font-size: 0;
 }
 
@@ -161,9 +161,10 @@ a {
 	padding: 5px;
 	border: 1px solid #000;
 	border-radius: 5px;
-	font-size: 1.1rem;
+	font-size: 0.8rem;
 	text-decoration: none;
 	color: #000;
+	text-align: center;
 }
 
 
@@ -265,13 +266,17 @@ a {
 
 .board_page a.bt {
 	padding-top: 10px;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	letter-spacing: -1px;
+	text-decoration: none;
+	color: black;
 }
 
 .board_page a.num {
 	padding-top: 9px;
-	font-size: 1.4rem;
+	font-size: 1rem;
+	text-decoration: none;
+	color: black;
 }
 
 .board_page a.num.on {
