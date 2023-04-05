@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-
 header {
 	background-color: black; 
 	height: 150px;
@@ -94,7 +93,10 @@ footer {
 	height: 200px;
 }
 article {
-	padding: 50px;
+	padding-top: 5%;
+	padding-left:15%;
+	padding-right: 15%;
+	padding-bottom: 10%;
 	background-color: rgb(233, 233, 233)
 }
 /* .container {
@@ -131,12 +133,13 @@ a {
 }
 
 .board_wrap {
-	width: 800px;
+	width: 750px;
+	height: 600px;
 	margin: auto;
 }
 
 .board_title {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 
 .board_title strong {
@@ -158,10 +161,12 @@ a {
 	display: inline-block;
 	min-width: 80px;
 	margin-left: 10px;
-	padding: 10px;
+	padding: 5px;
 	border: 1px solid #000;
-	border-radius: 2px;
-	font-size: 1.4rem;
+	border-radius: 5px;
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: #000;
 }
 
 .bt_wrap a:first-child {
@@ -287,7 +292,7 @@ a {
 }
 
 .board_view .title {
-	padding: 20px 15px;
+	padding: 25px 15px;
 	border-bottom: 1px dashed #ddd;
 	font-size: 2rem;
 }
@@ -317,25 +322,6 @@ a {
 	width: 1px;
 	height: 13px;
 	background: #ddd;
-}
-
-.board_view .info dl:first-child::before {
-	display: none;
-}
-
-.board_view .info dl dt,
-.board_view .info dl dd {
-	display: inline-block;
-	font-size: 1.4rem;
-}
-
-/* .board_view .info dl dt {
-
-} */
-
-.board_view .info dl dd {
-	margin-left: 10px;
-	color: #777;
 }
 
 .board_view .cont {
@@ -371,13 +357,19 @@ a {
 }
 
 .board_write .title dt,
+.board_write .info dt {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.2rem;
+}
+
 .board_write .title dd,
-.board_write .info dt,
 .board_write .info dd {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 1.4rem;
+	font-size: 1rem;
 }
+
 
 .board_write .title dt,
 .board_write .info dt {
@@ -391,12 +383,12 @@ a {
 .board_write .title input[type="text"],
 .board_write .info input[type="text"],
 .board_write .info input[type="password"] {
-	padding: 10px;
+	padding: 5px;
 	box-sizing: border-box;
 }
 
 .board_write .title input[type="text"] {
-	width: 80%;
+	width: 90%;
 }
 
 .board_write .cont {
@@ -465,13 +457,10 @@ a {
 			display: none;
 	}
 
-	.board_view .info dl dt,
-	.board_view .info dl dd {
-			font-size: 1.2rem;
-	}
+
 
 	.board_write .info dl {
-			width: 49%;
+			width: 50%;
 	}
 
 	.board_write .info dl:first-child {
