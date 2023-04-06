@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'BookkMyungjo-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+header {
+	background-color: black; 
+	height: 150px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	background-color: white;
+	height: 50px;
+	display: flex;
+}
+
+div#content {
+width:1000px;
+height:50px;
+left:0px;
+top:0px;
+position:relative;
+}
+
+div#home {
+width:50px;
+height:50px;
+background:white;
+left:0px;
+top:0px;
+position:absolute;
+z-index:2;
+}
+
+div#home:hover {
+cursor:pointer;
+	}
+
+div.search-box {
+	justify-items: flex-end;
+	padding-top: 10px;
+}
+
+ul {
+width:600px;
+height:50px;
+list-style:none;
+left:-600px;/*메뉴의 처음위치는 브라우저 밖으로 지정*/
+top:15px;
+position:absolute;
+z-index:1;
+font-family: 'Kanit', sans-serif;
+}
+
+ul li {
+width:150px;
+height:50px;
+float:left;/*가로로 늘어선 형태를 만들기 위해서*/
+opacity:0.4;
+text-decoration: none;
+color: black;
+}
+
+li > a {
+	text-decoration: none;
+	color: black;
+}
+
+section {
+	animation: fadein 2000ms ease-out;
+	-webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+	background-color: white;
+	font-family: 'BookkMyungjo-Bd';
+}
+	
+@keyframes fadeIn {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+@keyframes fadeOut {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+@-webkit-keyframes fadeOut {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+footer {
+	background-color: black;
+	height: 200px;
+}
+
+article {
+	padding-top: 5%;
+	padding-left:15%;
+	padding-right: 15%;
+	padding-bottom: 10%;
+	background-color: rgb(233, 233, 233)
+}
+
+/* .container {
+	
+} */
+
+.footer-comment {
+	background-color: rgb(34, 34, 34);
+	color: rgb(205, 209, 213);
+	text-align: center;
+	height: 40px;
+	padding: 0 auto;
+}
+
+/* .footer-icon {
+	
+} */
+
+
+/* -------------------------------------logincss */
+
+@import url('https://rsms.me/inter/inter-ui.css');
+::selection {
+  background: #2D2F36;
+}
+::-webkit-selection {
+  background: #2D2F36;
+}
+::-moz-selection {
+  background: #2D2F36;
+}
+body {
+  background: white;
+  font-family: 'Inter UI', sans-serif;
+  margin: 0;
+	
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 70px);
+  position: relative;
+  place-content: center;
+  width: calc(100% - 40px);
+}
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+.left {
+  background: white;
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}
+.login {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+.eula {
+  color: #999;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: -10px;
+  margin-left: 50px;
+  margin-right: 85px;
+
+  
+}
+.right {
+  background: #262628;
+  box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+  color: #F1F1F2;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+
+.underLine {
+  width: 300px;
+  height: 2px;
+  border: 2px solid;
+  border-radius: 20px;
+  border-image: linear-gradient(to right, #f8fa8bbe, #f7b6e8aa, #65d6ffaa);
+  border-image-slice: 1;
+
+}
+
+.form {
+  margin: 40px;
+  position: absolute;
+}
+label {
+  color:  #c2c2c5;
+  display: block;
+  font-size: 18px;
+  height: 16px;
+  margin-top: 20px;
+}
+
+.page input {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+#submit {
+  color: #707075;
+  margin-top: 40px;
+  transition: color 200ms;
+}
+#submit:hover {
+  color: #f2f2f2;
+}
+
