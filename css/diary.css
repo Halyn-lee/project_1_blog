@@ -107,9 +107,7 @@ article {
 	padding: 50px;
 	background-color: rgb(233, 233, 233)
 }
-/* .container {
-	
-} */
+
 
 .footer-comment {
 	background-color: rgb(34, 34, 34);
@@ -117,11 +115,25 @@ article {
 	text-align: center;
 	height: 40px;
 	padding: 0 auto;
+	padding-top: 6px;
 }
 
-/* .footer-icon {
-	
-} */
+.footer-icon {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+	padding: 5px;
+}
+
+#twit, #fb {
+	margin-top: 1px;
+	padding-top: 1px;
+	margin-left: 15px;
+}
+
+#gh {
+	margin-left: 15px;
+}
 
 
 ul, li {
