@@ -51,6 +51,7 @@
 			<a class="quickMove" href="../html/music_posts.html">빠른 이동을 원하시면, 클릭해주세요.</a>
 		</div>
 	</div>
+
 	<div class="welcome-section content-hidden" style="font-family: 'Unlock', cursive;">
 		<div class="content-wrap">
 			<ul class="fly-in-text">
@@ -68,24 +69,18 @@
 	</div>
 
 	<script>
-
 		$(function () {
 			var welcomSection = $('.welcome-section'),
 				enterButton = welcomSection.find('.enter-button');
-
 			setTimeout(function () {
 				welcomSection.removeClass('content-hidden');
 			}, 800);
-
 			enterButton.on('click', function (e) {
 				e.preventDefault();
 				welcomSection.addClass('content-hidden').fadeOut();
 			})
 		})
-
 	</script>
 
-
 </body>
-
 </html>

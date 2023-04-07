@@ -77,6 +77,11 @@ li > a {
 	color: black;
 }
 
+a:hover{
+	text-decoration: none;
+	color:black
+}
+
 	section {
 		animation: fadein 2000ms ease-out;
 		-webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
@@ -154,7 +159,7 @@ article {
 	margin-left: 15px;
 }
 
-#gh {
+.footer-icon > #gh {
 	margin-left: 15px;
 }
 
